@@ -1,1 +1,1 @@
-web: gunicorn microblog.wsgi
+web: gunicorn video1.wsgi
