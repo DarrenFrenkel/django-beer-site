@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content%}
+	<div id="beerlist">
+		{% for beer in beers %}
+		{{ beer }}
+		{% endfor %}
+	</div>
+{% endblock %}

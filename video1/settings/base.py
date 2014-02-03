@@ -1,5 +1,5 @@
 """
-Django settings for video1 project.
+Django settings for microblog project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -57,15 +57,13 @@ MEDIA_URL = ''
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-#ALLOWED_HOST = []
-#When I deploy to heroku, I would need to activate this allowed host and deactivate the one I'm currently using
 ALLOWED_HOSTS = ['*']
 
-STATIC_ROOT = root("..", "static")
+STATIC_ROOT = '/vagrant/projects/video1/beer/static'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS =(
-    root("..", "assets"),
+    root("..", "static"),
 )
 
 STATICFILES_FINDERS = (
@@ -97,6 +95,12 @@ WSGI_APPLICATION = 'video1.wsgi.application'
 TEMPLATE_DIRS =( 
     root("templates"),
 )
+
+MEDIA_ROOT = root("..", "uploads")
+
+
+
+
 
 # Application definition
 
