@@ -26,7 +26,7 @@ root = lambda * x: os.path.join(os.path.abspath(PROJECT_ROOT), *x)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
-
+DJANGO_SETTINGS_MODULE = mysite.settings
 ADMINS = (
     ("Darren Frenkel", "darrenfrenkel@gmail.com"),		
 )
