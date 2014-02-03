@@ -59,12 +59,21 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = ['*']
 
-STATIC_ROOT = '/vagrant/projects/video1/beer/static'
+# Static asset configuration
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS =(
-    root("..", "static"),
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_PATH, 'static'),
 )
+
+#STATIC_ROOT = '/vagrant/projects/video1/beer/static'
+#STATIC_URL = '/static/'
+
+#STATICFILES_DIRS =(
+#    root("..", "static"),
+#)
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
