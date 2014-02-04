@@ -2,7 +2,7 @@
 {% block content%}
 	<div id="beerlist">
 		{% for beer in beers %}
-		{{ beer }}
+		<p><a href="{{ beer.slug }}" </a>{{ beer }}</p>
 		{% endfor %}
 	</div>
 {% endblock %}

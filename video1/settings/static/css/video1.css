@@ -8,3 +8,12 @@ body {
 	margin:0;
 	padding:0;
 }
+
+#pageContainer {
+	background: url(../img/center_bg.jpg) repeat-y scroll center top #000000;
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+	min-height: 800px;
+	
+}
