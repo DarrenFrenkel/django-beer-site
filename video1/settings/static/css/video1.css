@@ -11,9 +11,14 @@ body {
 
 #pageContainer {
 	background: url(../img/center_bg.jpg) repeat-y scroll center top #000000;
-	margin: 0 auto;
+	margin:auto;
 	position: relative;
 	width: 1000px;
 	min-height: 800px;
+	margin-top:15px
 	
+}
+
+h1, h2, p {
+	margin-top:0;
 }

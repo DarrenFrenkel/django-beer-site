@@ -3,6 +3,6 @@
 	<div id="singlebeer">
 		<p>Name: {{ beer }}</p>
 		<p>Locality: {{ beer.get_localilty_display}} </p>
-		<p>Brewery: {{ beer.brewery}} </p>
+		<p>Brewery: <a href="/brewerys/{{ beer.brewery.slug }}"</a> {{ beer.brewery}}  </p>
 	</div>
 {% endblock %}
