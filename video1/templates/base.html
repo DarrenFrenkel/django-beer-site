@@ -1,12 +1,13 @@
 <html>
 <head>
-		{% load staticfiles %}
-		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/video1.css" />
+
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/video1.css" />
 		{% block extrahead %} {% endblock %} 
 </head>
 <body>
 	<div id="pageContainer">
 		{% block content%}
 		{% endblock %}
+	</div>	
 </body>
 </html>
