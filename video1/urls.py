@@ -12,11 +12,11 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-	(r'^$', TemplateView.as_view(template_name='index.html')),
-	(r'^beers/$', 'beer.views.BeersAll' ),
-	(r'^beers/(?P<beerslug>.*)/$', 'beer.views.SpecificBeer'),
-	(r'^brewerys/(?P<breweryslug>.*)/$', 'beer.views.SpecificBrewery'),
-	
+    (r'^tinymce/', include('tinymce.urls')),	
+    (r'^$', 'pages.views.MainHomePage'),
+    (r'^beers/$', 'beer.views.BeersAll' ),
+    (r'^beers/(?P<beerslug>.*)/$', 'beer.views.SpecificBeer'),
+    (r'^brewerys/(?P<breweryslug>.*)/$', 'beer.views.SpecificBrewery'),
 )
 
 urlpatterns += patterns('',
