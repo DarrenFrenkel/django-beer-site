@@ -105,10 +105,12 @@ TEMPLATE_DIRS =(
     root("templates"),
 )
 
-MEDIA_ROOT = root("..", "uploads")
+MEDIA_ROOT = '/vagrant/projects/video1/video1/settings/static/media/'
+MEDIA_URL = '/static/media/'
 
 
-
+# provide our get_profile()
+AUTH_PROFILE_MODULE = 'drinker.Drinker'
 
 
 # Application definition
@@ -130,6 +132,7 @@ THIRD_PARTY_APPS = (
 LOCAL_APPS = (
     'beer',
 	'pages',
+    'drinker'	
 )
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
