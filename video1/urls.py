@@ -17,9 +17,10 @@ urlpatterns = patterns('',
     (r'^beers/$', 'beer.views.BeersAll' ),
     (r'^beers/(?P<beerslug>.*)/$', 'beer.views.SpecificBeer'),
     (r'^brewerys/(?P<breweryslug>.*)/$', 'beer.views.SpecificBrewery'),
+    (r'^register/$', 'drinker.views.DrinkerRegistration'), 	
 
 )
 
 urlpatterns += patterns('',
-    url(r'^static/(.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),	   
+    url(r'^static/(.*)$', 'django.views.static.serve', {'document_root': /app/.heroku/python/lib/python2.7/site-packages/tinymce/static/'}),	   
 )
