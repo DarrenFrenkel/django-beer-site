@@ -22,5 +22,5 @@ urlpatterns = patterns('',
 )
 
 urlpatterns += patterns('',
-    url(r'^static/(.*)$', 'django.views.static.serve', {'document_root': /app/.heroku/python/lib/python2.7/site-packages/tinymce/static/'}),	   
+    url(r'^static/(.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),	   
 )
