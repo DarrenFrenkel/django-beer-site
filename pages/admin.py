@@ -6,4 +6,4 @@ from pages.models import HomePage
 #    class Media:
 #        js = ('/static/media/js/tiny_mce/tiny_mce.js', '/static/media/js/tiny_mce/textareas.js')	
 
-admin.site.register(HomePage, TinyMCEAdmin)
+admin.site.register(HomePage)
