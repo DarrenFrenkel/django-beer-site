@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 class Drinker(models.Model):
     user = models.OneToOneField(User)
-    birthday = models.DateField()
+    birthday = models.DateField(null=True, blank=True)
     name = models.CharField(max_length=100)
 
     def  __unicode__(self):
