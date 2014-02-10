@@ -2,7 +2,7 @@
 {% block content%}
 	<div id="beerlist">
 		{% for beer in beers %}
-		<p><a href="{{ beer.slug }}" </a><img src="{{ beer.image1.url }}"/>{{ beer }}</p>
+		<p><a href="{{ beer.slug }}" /> <img src="{{ beer.image1.url }}"/>{{ beer }}</a></p>
 		{% endfor %}
 	</div>
 {% endblock %}

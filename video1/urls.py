@@ -17,7 +17,7 @@ urlpatterns = patterns('',
     (r'^beers/$', 'beer.views.BeersAll' ),
     (r'^beers/(?P<beerslug>.*)/$', 'beer.views.SpecificBeer'),
     (r'^brewerys/(?P<breweryslug>.*)/$', 'beer.views.SpecificBrewery'),
- #   (r'^register/$', 'drinker.views.DrinkerRegistration'), 	
+    #(r'^register/$', 'drinker.views.DrinkerRegistration'), 	
 
 )
 

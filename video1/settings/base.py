@@ -113,14 +113,14 @@ MEDIA_ROOT = '/vagrant/projects/video1/video1/settings/static/media/'
 MEDIA_URL = '/static/media/'
 
 ##TINYMCE CONFIGURATIONS
-TINYMCE_JS_URL = os.path.join(MEDIA_ROOT, "js/tiny_mce/tiny_mce.js")
-TINYMCE_JS_ROOT = os.path.join(MEDIA_ROOT, "js/tiny_mce")
-TINYMCE_DEFAULT_CONFIG = {
-    'theme': "simple",
-    'relative_urls': False	
-}
-TINYMCE_SPELLCHECKER = False
-TINYMCE_COMPRESSOR = False
+#TINYMCE_JS_URL = os.path.join(MEDIA_ROOT, "js/tiny_mce/tiny_mce.js")
+#TINYMCE_JS_ROOT = os.path.join(MEDIA_ROOT, "js/tiny_mce")
+#TINYMCE_DEFAULT_CONFIG = {
+#    'theme': "simple",
+#    'relative_urls': False	
+#}
+#TINYMCE_SPELLCHECKER = False
+#TINYMCE_COMPRESSOR = False
 # provide our get_profile()
 AUTH_PROFILE_MODULE = 'drinker.Drinker'
 
