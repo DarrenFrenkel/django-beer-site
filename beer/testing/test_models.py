@@ -17,19 +17,18 @@ class BreweryTest(TestCase):
 		description="Freshly Made Brew")
 
 	def create_beer(self):	
-	
+		'''Creates an instance of the Beer Model '''
 		brew = self.create_brewery()
-		
 		return Beer.objects.create(name="Coors Light",slug="coors-light",brewery=brew,localilty="D",description="a great beer",image1="budlight")
 	
-	def test_model_url(self):
-		brewery = self.create_brewery()
-		#Checks if the object brewery is an instance of the Brewery Model	
+	def test_brewery_model(self):
+		'''Test if object is an instance of our brewery model and if the object's attributes are correct'''
+		brewery = self.create_brewery()	
 		self.assertTrue(isinstance(brewery, Brewery))
-		#Check if a slug is created from name when no slug is given
 		self.assertEqual(brewery.slug, 'coors-golden-brewery')	
 	
 	def test_beer_model(self):
+		'''Test if object is an instance of our brewery model and if the object's attributes are correct'''
 		beer = self.create_beer()
 		self.assertTrue(isinstance(beer, Beer))
 		self.assertEqual(beer.localilty, "D")
