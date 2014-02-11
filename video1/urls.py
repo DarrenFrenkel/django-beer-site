@@ -13,7 +13,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     (r'^tinymce/', include('tinymce.urls')),	
-    (r'^$', TemplateView.as_view(template_name='index.html')),
+    (r'^$', 'pages.views.MainHomePage'),
     (r'^beers/$', 'beer.views.BeersAll' ),
     (r'^beers/(?P<beerslug>.*)/$', 'beer.views.SpecificBeer'),
     (r'^brewerys/(?P<breweryslug>.*)/$', 'beer.views.SpecificBrewery'),

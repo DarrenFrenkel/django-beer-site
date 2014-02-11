@@ -113,15 +113,15 @@ MEDIA_ROOT = '/tmp/'
 MEDIA_URL = '/static/media/'
 
 ##TINYMCE CONFIGURATIONS
-#TINYMCE_JS_URL = os.path.join(MEDIA_ROOT, "js/tiny_mce/tiny_mce.js")
-#TINYMCE_JS_ROOT = os.path.join(MEDIA_ROOT, "js/tiny_mce")
-#TINYMCE_DEFAULT_CONFIG = {
-#    'theme': "simple",
-#    'relative_urls': False	
-#}
-#TINYMCE_SPELLCHECKER = False
-#TINYMCE_COMPRESSOR = False
-# provide our get_profile()
+TINYMCE_JS_URL = os.path.join(MEDIA_ROOT, "js/tiny_mce/tiny_mce.js")
+TINYMCE_JS_ROOT = os.path.join(MEDIA_ROOT, "js/tiny_mce")
+TINYMCE_DEFAULT_CONFIG = {
+    'theme': "simple",
+    'relative_urls': False	
+}
+TINYMCE_SPELLCHECKER = False
+TINYMCE_COMPRESSOR = False
+##provide our get_profile()
 AUTH_PROFILE_MODULE = 'drinker.Drinker'
 
 
@@ -144,7 +144,7 @@ THIRD_PARTY_APPS = (
 LOCAL_APPS = (
     'beer',
 #    'drinker',
-#    'pages',	
+    'pages',	
 )
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
