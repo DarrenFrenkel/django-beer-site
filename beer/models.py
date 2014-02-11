@@ -19,7 +19,7 @@ class Beer(models.Model):
     brewery = models.ForeignKey(Brewery, related_name='beers') 	
     localilty = models.CharField(max_length=1, choices=BEER_CHOICES)
     description = models.TextField(blank=True)
-#    image1 = models.ImageField(upload_to="img/beerthumbs", null=True, blank=True, max_length=100, help_text="50x180px image" )
+    image1 = models.ImageField(upload_to="img/beerthumbs", null=True, blank=True, max_length=100, help_text="50x180px image" )
 
     def __unicode__(self):
         return self.name
