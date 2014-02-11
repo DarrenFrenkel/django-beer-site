@@ -109,7 +109,7 @@ TEMPLATE_DIRS =(
     root("templates"),
 )
 
-MEDIA_ROOT = '/vagrant/projects/video1/video1/settings/static/media/'
+MEDIA_ROOT = '/tmp/'
 MEDIA_URL = '/static/media/'
 
 ##TINYMCE CONFIGURATIONS
