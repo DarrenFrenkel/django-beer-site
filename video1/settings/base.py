@@ -143,7 +143,6 @@ THIRD_PARTY_APPS = (
 
 LOCAL_APPS = (
     'beer',
-	'pages',
     'drinker'	
 )
 
