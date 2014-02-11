@@ -24,7 +24,7 @@ PROJECT_ROOT = here("..")
 root = lambda * x: os.path.join(os.path.abspath(PROJECT_ROOT), *x)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
