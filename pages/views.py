@@ -5,6 +5,6 @@ from pages.models import HomePage
 
 # Create your views here.
 def MainHomePage(request):
-    homepage = HomePage.objects.get(pk=2)
+    homepage = HomePage.objects.get(pk=3)
     context = {'homepage': homepage}
     return render_to_response('index.html', context, context_instance=RequestContext(request))	
