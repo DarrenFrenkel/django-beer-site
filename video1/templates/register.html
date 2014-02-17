@@ -16,7 +16,7 @@
 <div class="register_div">
 	{% if form.password.errors %}<p class="error">{{ form.password.errors }} </p> {% endif %}
 	<p><label for="password" {% if form.password.errors %} class="error" {% endif %}>Password:</label></p>
-	<p placeholde="password">{{ form.password }}</p>	
+	<p>{{ form.password }}</p>	
 </div>
 <div class="register_div">
 	{% if form.password1.errors %}<p class="error">{{ form.password1.errors }} </p> {% endif %}
