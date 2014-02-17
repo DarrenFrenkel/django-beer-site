@@ -13,7 +13,7 @@ class RegistrationForm(ModelForm):
         model = Drinker
         exclude = ('user',)	
 
-    def clean_user(self):
+    def clean_username(self):
         username = self.cleaned_data['username']
         try:
             User.objects.get(username=username)
@@ -21,11 +21,11 @@ class RegistrationForm(ModelForm):
             return username
         raise forms.ValidationError("That username is already take, please select another")			
 		
-    def clean_password(self):
-        password = self.cleaned_data['password']
-        password1 = self.cleaned_data['password1']		
-        if password != password1:
+    def clean_password(self): 	
+        #cleaned_data = super(RegistrationForm, self).clean()
+        if self.data['password'] != self.data['password1']:
             raise forms.ValidationError("The passwords did not match. Please try again.")
-        return password
+        else:	
+            return self.data['password']
 			
 		

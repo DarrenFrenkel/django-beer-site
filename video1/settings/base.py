@@ -114,7 +114,7 @@ MEDIA_URL = '/static/media/'
 
 
 ##provide our get_profile()
-AUTH_USER_MODULE = 'drinker.Drinker'
+AUTH_PROFILE_MODULE = 'drinker.Drinker'
 
 
 # Application definition
