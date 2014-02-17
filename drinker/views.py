@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from drinker.forms import RegistrationForm
+from drinker.models import Drinker
 # Create your views here.
 
 def DrinkerRegistration(request):
@@ -20,7 +21,9 @@ def DrinkerRegistration(request):
             drinker = user.get_profile()  
             drinker.name = form.cleaned_data['name']
             drinker.birthday = form.cleaned_data['birthday']
-            drinker.save()  	
+            drinker.save()  
+#            drinker = Drinker(user=user, name=form.cleaned_data['name'], birthday=form.cleaned_data['birthday'])	
+#            drinker.save()			
             return HttpResponseRedirect('/profile/')
 		# If user was not signed and form was posted but form was not valid return the form with validation issues
         else:
